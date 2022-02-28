@@ -1,10 +1,10 @@
 import './App.css';
-import Frase from './Frase';
+import Word from './Word';
 
 function App() {
   return (
     <div className="App">
-      <Frase/>
+      <Word/>
     </div>
   );
 }
