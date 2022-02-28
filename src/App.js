@@ -1,10 +1,10 @@
 import './App.css';
-import Word from './Word';
+import QuoteBox from './QuoteBox';
 
 function App() {
   return (
     <div className="App">
-      <Word/>
+      <QuoteBox/>
     </div>
   );
 }

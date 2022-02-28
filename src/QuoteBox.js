@@ -3,9 +3,9 @@ import quotes from './quotes.json'
 
 const getRandom = () => Math.floor(Math.random() * quotes.length);
 
-const Word = () => {
+const QuoteBox = () => {
 
-    const [word, setWord] = useState(quotes[getRandom()]);
+    const [quote, setWord] = useState(quotes[getRandom()]);
     const colors = [
        "#FF5733",
        "#FFA833",
@@ -23,8 +23,8 @@ const Word = () => {
 
     return (
         <div style={{color: color}}>
-            <h3>¡{word.quote}!</h3>
-            <p>-{word.author}-</p>
+            <h3>¡{quote.quote}!</h3>
+            <p>-{quote.author}-</p>
           
             <button onClick={changePhrase}><i class="fa-solid fa-arrow-right-long"></i></button>
         <footer>  Made by Ariel F. G.</footer>
@@ -32,4 +32,4 @@ const Word = () => {
     );
 };
 
-export default Word;
+export default QuoteBox;
